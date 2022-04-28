@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="cli_basetypes">
+      <HintPath>..\DLL\cli_basetypes.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_cppuhelper">
+      <HintPath>..\DLL\cli_cppuhelper.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_oootypes">
+      <HintPath>..\DLL\cli_oootypes.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_ure">
+      <HintPath>..\DLL\cli_ure.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_uretypes">
+      <HintPath>..\DLL\cli_uretypes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
